@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:paddingLeft="10dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/editTextGlucose"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Glucose"
+        android:inputType="numberDecimal"
+
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextSucrose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <EditText
+        android:id="@+id/editTextSucrose"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Sucrose"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFructose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGlucose" />
+
+    <EditText
+        android:id="@+id/editTextFructose"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Fructose"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTannins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSucrose" />
+
+    <EditText
+        android:id="@+id/editTextTannins"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Tannins"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPhenolicAcids"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFructose" />
+
+    <EditText
+        android:id="@+id/editTextPhenolicAcids"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Phenolic Acids"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCitric"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTannins" />
+
+    <EditText
+        android:id="@+id/editTextCitric"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Citric"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMalic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPhenolicAcids" />
+
+    <EditText
+        android:id="@+id/editTextMalic"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Malic"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTartaricAcid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCitric" />
+
+    <EditText
+        android:id="@+id/editTextTartaricAcid"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Tartaric Acid"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAlkaloids"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMalic" />
+
+    <EditText
+        android:id="@+id/editTextAlkaloids"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:hint="Alkaloids"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTerpenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTartaricAcid" />
+
+    <EditText
+        android:id="@+id/editTextTerpenes"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="157dp"
+        android:background="@drawable/input_bg"
+        android:hint="Terpenes"
+        android:inputType="numberDecimal"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAlkaloids" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_bg"
+        android:text="Predict"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTerpenes" />
+
+    <Button
+
+        android:id="@+id/btnclear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_bg"
+        android:text="Clear"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTerpenes"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextTerpenes"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTerpenes" />
+
+    <TextView
+        android:id="@+id/textViewResultPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:text="Predicted Primary Rasa: "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button10" />
+
+    <TextView
+        android:id="@+id/textViewResultSecondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Predicted Secondary Rasa: "
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultPrimary" />
+
+    <Button
+        android:id="@+id/visualisebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:text="Visualise Data"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTerpenes"
+        app:layout_constraintStart_toStartOf="@+id/editTextTerpenes"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTerpenes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
